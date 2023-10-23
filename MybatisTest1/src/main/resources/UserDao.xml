@@ -2,12 +2,10 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--这里的配置地址必须和持久层的位置保持一致-->
 <mapper namespace="mybatis.example.dao.UserDao">
     <!--配置查询所有-->
     <select id="findAll" resultType="mybatis.example.domain.User">
         select * from user
     </select>
-
-
-
 </mapper>

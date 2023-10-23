@@ -31,8 +31,9 @@ public class MybatisTest {
         SqlSession session = factory.openSession();
         //4.使用SqlSession创建Dao接口的代理对象
         UserDao userDao = session.getMapper(UserDao.class);
-        //5.使用代理对象执行方法
+        //5.使用代理对象执行查询方法
         List<User> users = userDao.findAll();
+        //6.遍历结果集
         for(User user : users){
             System.out.println(user);
         }
