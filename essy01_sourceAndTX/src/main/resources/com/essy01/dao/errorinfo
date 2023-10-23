@@ -1,0 +1,8 @@
+Mybatis 中Mapper使用package方式配置mapper文件 报错
+https://blog.csdn.net/qq_40872146/article/details/107952627
+报错原因：在maven项目中，如果在resources中创建mapper.xml文件存放的应当是一个包中，
+我们正常使用com.demo.mapper(测试使用包名)，在resources中只是一个文件夹而不是包。
+
+maven包名要和项目包名保持一致；
+
+
