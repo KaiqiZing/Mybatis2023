@@ -9,7 +9,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mybatisCrudTest" />
         <module name="essy01" />
+        <module name="mybatis_design" />
         <module name="mybatisTest1" />
       </profile>
     </annotationProcessing>

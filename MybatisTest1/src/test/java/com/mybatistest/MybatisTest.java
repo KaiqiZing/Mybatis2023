@@ -15,6 +15,14 @@ import java.util.List;
  * @Company http://www.ithiema.com
  * mybatis的入门案例
  */
+/*
+* 执行流程：
+* 1、先读取xml配置文件，
+* 2、配置文件先读取数据库信息并链接，再读取对应的持久层的xml文件
+* 3、持久层xml文件读取1.持久层地址和实体类信息
+* 4、执行SQL语句
+* 5、通过代理实体类对象开始执行SQL方法，并返回对应的结果集
+* */
 public class MybatisTest {
 
     /**

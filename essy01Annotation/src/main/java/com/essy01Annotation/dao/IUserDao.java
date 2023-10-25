@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  *
- * 用户的持久层接口
+ * 用户的持久层接口，以注解的方式实现
  */
 public interface IUserDao {
 

@@ -142,10 +142,13 @@ public class XMLConfigBuilder {
                 String id = selectElement.attributeValue("id");
                 //取出resultType属性的值  组成map中value的部分
                 String resultType = selectElement.attributeValue("resultType");
+                System.out.println("取出resultType属性的值"+resultType);
                 //取出文本内容            组成map中value的部分
                 String queryString = selectElement.getText();
+                System.out.println("取出文本内容queryString"+queryString);
                 //创建Key
                 String key = namespace+"."+id;
+                System.out.println("取出的key"+key);
                 //创建Value
                 Mapper mapper = new Mapper();
                 mapper.setQueryString(queryString);

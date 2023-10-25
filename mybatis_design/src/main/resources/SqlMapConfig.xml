@@ -21,9 +21,9 @@
     <!-- 指定映射配置文件的位置，映射配置文件指的是每个dao独立的配置文件 -->
     <mappers>
 
-<!--
         <mapper resource="UserDao.xml"/>   // xml 文件获取数据
--->
+<!--
         <mapper class = "org.example.dao.UserDao"/>   // 使用注解获取数据
+-->
     </mappers>
 </configuration>
