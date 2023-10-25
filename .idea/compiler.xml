@@ -11,6 +11,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatisCrudTest" />
         <module name="essy01" />
+        <module name="essy01cacheTest" />
         <module name="mybatis_design" />
         <module name="mybatisTest1" />
       </profile>

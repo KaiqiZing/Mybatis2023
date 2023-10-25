@@ -47,13 +47,12 @@ public class UserTest {
      */
     @Test
     public void testFirstCache(){
-        User user1 = userDao.findById(41);
+        User user1 = userDao.findById(46);
         System.out.println("第一次查询用户"+ user1);
 
 
-        userDao = sqlSession.getMapper(IUserDao.class);
 
-        User user2 = userDao.findById(41);
+        User user2 = userDao.findById(46);
         System.out.println("第二次查询用户"+user2);
 
 
@@ -105,5 +104,6 @@ public class UserTest {
         System.out.println(user2);
 
         System.out.println(user1 == user2);
+
     }
 }

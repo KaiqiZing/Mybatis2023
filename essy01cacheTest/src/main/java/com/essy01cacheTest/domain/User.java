@@ -52,14 +52,14 @@ public class User implements Serializable {
         this.birthday = birthday;
     }
 
-//    @Override
-//    public String toString() {
-//        return "User{" +
-//                "id=" + id +
-//                ", username='" + username + '\'' +
-//                ", address='" + address + '\'' +
-//                ", sex='" + sex + '\'' +
-//                ", birthday=" + birthday +
-//                '}';
-//    }
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", address='" + address + '\'' +
+                ", sex='" + sex + '\'' +
+                ", birthday=" + birthday +
+                '}';
+    }
 }

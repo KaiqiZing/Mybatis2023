@@ -3,13 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.essy01cacheTest.dao.IUserDao">
-    <cache></cache>
+    <cache></cache>// 开启二级缓存
     <!-- 查询所有 -->
     <select id="findAll" resultType="user">
         select * from user
     </select>
 
-    <!-- 根据id查询用户 -->
+    <!-- 根据id查询用户 --><!--开启一级缓存-->
     <select id="findById" parameterType="INT" resultType="user" useCache="true">
         select * from user where id = #{uid}
     </select>
